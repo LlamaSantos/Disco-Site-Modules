@@ -1,0 +1,107 @@
+﻿.animation(@value)
+{
+    animation:@value;
+    -moz-animation:@value;
+    -webkit-animation:@value;
+}
+
+.background-clip(@value)
+{
+    -moz-background-clip:@value;
+    -webkit-background-clip:@value;
+    background-clip:@value;
+}
+
+.bg-linear-gradient-vertical(@startColor, @endColor, @fallbackColor)
+{
+    background-color: @fallbackColor;
+    background-repeat: no-repeat;
+    background-image: -moz-linear-gradient(top, @startColor 0%, @endColor 100%);
+    background-image: -webkit-linear-gradient(top, @startColor 0%, @endColor 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @startColor), color-stop(100%, @endColor));
+    background-image: -o-linear-gradient(top, @startColor 0%, @endColor 100%);
+    background-image: -ms-linear-gradient(top, @startColor 0%, @endColor 100%);
+    background-image: linear-gradient(top, @startColor 0%, @endColor 100%);
+    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d', GradientType=0))", @startColor, @endColor);
+    filter: e(%("progid:DXImageTransform.Microsoft.Gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @startColor, @endColor));
+}
+
+.bg-linear-gradient-horizontal(@startColor, @endColor, @fallbackColor)
+{
+    background-color: @fallbackColor;
+    background-repeat: no-repeat;
+    background-image: -moz-linear-gradient(right center, @startColor 0%, @endColor 100%);
+    background-image: -webkit-linear-gradient(right center, @startColor 0%, @endColor 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, @startColor), color-stop(100%, @endColor));
+    background-image: -o-linear-gradient(left, @startColor 0%, @endColor 100%);
+    background-image: -ms-linear-gradient(left, @startColor 0%, @endColor 100%);
+    background-image: linear-gradient(left, @startColor 0%, @endColor 100%);
+    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d', GradientType=1))", @startColor, @endColor);
+    filter: e(%("progid:DXImageTransform.Microsoft.Gradient(startColorstr='%d', endColorstr='%d', GradientType=1)", @startColor, @endColor));
+}
+
+.clear-gradient(@fallbackColor)
+{
+    background-color:@fallbackColor; 
+    background-image:none;
+    filter:none; 
+    -ms-filter:none; 
+}
+
+.border-radius(@value: 5px)
+{
+    -moz-border-radius:@value; 
+    -webkit-border-radius:@value; 
+    border-radius:@value; 
+}
+
+.box-sizing(@value)
+{
+    -moz-box-sizing:@value;
+    -webkit-box-sizing:@value;
+    box-sizing:@value;
+}
+
+.box-shadow-simple(@value)
+{
+    -moz-box-shadow:@value;
+    -webkit-box-shadow:@value;
+    box-shadow:@value;
+}
+
+.box-shadow(@value1, @value2)
+{
+    -moz-box-shadow:@value1, @value2;
+    -webkit-box-shadow:@value1, @value2;
+    box-shadow:@value1, @value2;
+}
+
+.display-inline()
+{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.opacity (@value: 0.50)
+{
+    @ieValue: @value * 100;
+    filter:alpha(opacity=@ieValue);
+    opacity: @value;
+}
+
+.round-corners(@data)
+{
+    -webkit-border-radius:@data;
+    -moz-border-radius:@data;
+    border-radius:@data;
+}
+
+.transition(@value)
+{
+    -webkit-transition:@value; 
+    -moz-transition:@value; 
+    -ms-transition:@value; 
+    -o-transition:@value; 
+    transition:@value;
+}

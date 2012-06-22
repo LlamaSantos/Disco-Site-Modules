@@ -1,0 +1,9 @@
+{
+    "name": "footer module",
+    "routes": "./lib/routes.js",
+    "templates": {
+        "footer": "./views/footer.mustache",
+        "site": "./views/site.mustache"
+    },
+    "static" : "./static"
+}

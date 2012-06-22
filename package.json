@@ -1,0 +1,14 @@
+{
+  "name": "llama",
+  "subdomain": "llama",
+  "scripts": {
+    "start": "app.js"
+  },
+  "version": "0.1.1",
+  "engines": {
+    "node": "0.6.17"
+  },
+  "dependencies": {
+    "express": "2.5.x"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "site module",
+    "routes" : "./lib/routes.js",
+    "templates" :
+    {
+        "site":"./views/site.mustache"
+    },
+    "static" : "./static"
+}

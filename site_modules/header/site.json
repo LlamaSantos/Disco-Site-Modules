@@ -1,0 +1,9 @@
+{
+    "name": "header module",
+    "routes" : "./lib/routes.js",
+    "templates" :
+    {
+        "header" : "./views/header.mustache"
+    },
+    "static" : "./static"
+}

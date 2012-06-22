@@ -1,0 +1,15 @@
+{
+    "name": "Facebook module",
+    "routes": "./lib/routes.js",
+    "requires": [ ],
+    "templates": {
+        "facebook": "./views/facebook.mustache",
+        "facebookCard": "./views/facebookCard.mustache"
+    },
+    "static": "./static",
+    "browser": {
+        "name": "/fb.js",
+        "scripts": [ ],
+        "templates": ["facebook", "facebookCard"]
+    }
+}
